@@ -30,8 +30,13 @@ public class Inventory{
         toppingsList.add(t7);
         Toppings t8=new Toppings("Fresh Tomato",true,2,10);
         toppingsList.add(t8);
+
+        Slides s1=new Slides("Cold Dring",20,5);
+        slidsList=new ArrayList();
+        slidsList.add(s1);
     }
 
     public static ArrayList<Crust> crustList=null;
     public static ArrayList<Toppings> toppingsList=null;
+    public static ArrayList<Slides> slidsList=null;
 }

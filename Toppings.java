@@ -11,6 +11,14 @@ public class Toppings{
         this.price=price;
     }
 
+    public String getName(){
+        return name;
+
+    }
+
+    public void setPrice(float price){
+        this.price=price;
+    }
     public float getPrice(){
         return price;
     }

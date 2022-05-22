@@ -14,9 +14,11 @@ public class Tests{
 
         //veg pizza shall get veg toppings only
         boolean test=PizzaWithToppings.validate(second,obj.toppingsList.get(1));
+        PizzaWithToppings pwt=null;
         if(test){
             System.out.println(second.toString()+" "+obj.toppingsList.get(1).toString());
             System.out.println("Total Price="+(second.getPrice()+obj.toppingsList.get(1).getPrice()));
+            pwt=new PizzaWithToppings(second,obj.toppingsList.get(1));
         }
         //stock not available
         c=obj.crustList.get(3);
@@ -26,6 +28,19 @@ public class Tests{
         else{
             System.out.println("out of Stock");
         }
-        //PizzaWithToppings(first,)    
+        Slides s1=obj.slidsList.get(0);
+        Slides orderslide=new Slides();
+        orderslide.setName(s1.getName());
+        orderslide.setPrice(s1.getPrice());        
+        // order class Test
+        System.out.println("Final Order");
+        Order o1=new Order();
+        o1.addPizza(first);
+        o1.addPizzaWithToppings(pwt);
+        o1.addSlide(orderslide);
+
+        System.out.println(o1.toString());
+        System.out.println("Total Price of order="+o1.getPrice());
+ 
     }
 }
