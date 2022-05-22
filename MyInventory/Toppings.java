@@ -1,3 +1,5 @@
+package MyInventory;
+
 public class Toppings{
     private String name;
     private boolean vegOrNonVeg;//true=veg;

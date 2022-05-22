@@ -1,3 +1,5 @@
+package MyInventory;
+
 public class Crust{
     private String name;
     private int stock;

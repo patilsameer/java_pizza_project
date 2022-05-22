@@ -1,3 +1,4 @@
+import MyInventory.*;
 public class PizzaWithToppings{
     public Pizza pizza;
     public Toppings toppings;

@@ -1,3 +1,5 @@
+package MyInventory;
+
 public class Slides{
     private String name;
     private float price;

@@ -1,3 +1,5 @@
+package MyInventory;
+
 import java.util.*;
 public class Inventory{
     public void setInventory(){
