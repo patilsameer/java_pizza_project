@@ -6,12 +6,12 @@ public class Tests{
 
         //testing pizza class
         Pizza first=new Pizza("Deluxe Veggie","Regular",150,"Hand tossed",true);
-        System.out.println(first.toString());
+        System.out.println(first);
        
         //testing selection of crust
         Crust c=obj.crustList.get(1);
         Pizza second=new Pizza("Delux Veggie","Regular",150,c.getName(),true);
-        System.out.println(second.toString());
+        System.out.println(second);
 
         //veg pizza shall get veg toppings only
         boolean test=PizzaWithToppings.validate(second,obj.toppingsList.get(1));
@@ -40,7 +40,7 @@ public class Tests{
         o1.addPizzaWithToppings(pwt);
         o1.addSlide(orderslide);
 
-        System.out.println(o1.toString());
+        System.out.println(o1);
         System.out.println("Total Price of order="+o1.getPrice());
 
         //TestsJ obj1=new TestsJ();
