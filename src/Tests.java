@@ -29,16 +29,16 @@ public class Tests{
         else{
             System.out.println("out of Stock");
         }
-        Slides s1=obj.slidsList.get(0);
-        Slides orderslide=new Slides();
-        orderslide.setName(s1.getName());
-        orderslide.setPrice(s1.getPrice());        
+        Sides s1=obj.sidesList.get(0);
+        Sides orderSide=new Sides();
+        orderSide.setName(s1.getName());
+        orderSide.setPrice(s1.getPrice());        
         // order class Test
         System.out.println("Final Order");
         Order o1=new Order();
         o1.addPizza(first);
         o1.addPizzaWithToppings(pwt);
-        o1.addSlide(orderslide);
+        o1.addSide(orderSide);
 
         System.out.println(o1);
         System.out.println("Total Price of order="+o1.getPrice());

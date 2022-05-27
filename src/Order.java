@@ -4,12 +4,12 @@ public class Order{
 
     private ArrayList<Pizza> pizzaList=null;
     private ArrayList<PizzaWithToppings> pizzaWithToppingsList=null;
-    private ArrayList<Slides> slidesList=null;
+    private ArrayList<Sides> sidesList=null;
     
     public Order(){
         pizzaList=new ArrayList();
           pizzaWithToppingsList=new ArrayList();
-          slidesList=new ArrayList();
+          sidesList=new ArrayList();
     }
     public void addPizza(Pizza pizza){
         pizzaList.add(pizza);
@@ -17,8 +17,8 @@ public class Order{
     public void addPizzaWithToppings(PizzaWithToppings pizzaWithToppings){
         pizzaWithToppingsList.add(pizzaWithToppings);
     }
-    public void addSlide(Slides slides){
-        slidesList.add(slides);
+    public void addSide(Sides sides){
+        sidesList.add(sides);
     }
 
     public float getPrice(){
@@ -31,7 +31,7 @@ public class Order{
             totalorder=totalorder+p.getPrice();
         }
 
-        for(Slides p:slidesList){
+        for(Sides p:sidesList){
             totalorder=totalorder+p.getPrice();;
         }
         return totalorder;
@@ -47,7 +47,7 @@ public class Order{
             totalorder=totalorder+" "+p.toString()+"\n";
         }
 
-        for(Slides p:slidesList){
+        for(Sides p:sidesList){
             totalorder=totalorder+" "+p.toString()+"\n";
         }
         return totalorder;
